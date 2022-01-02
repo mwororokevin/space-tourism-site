@@ -72,3 +72,30 @@ select {
     white-space: nowrap;
     border: 0;
 }
+
+/* --------------------- */
+/*  Colors */
+/* --------------------- */
+.bg-dark {
+    background-color: var(--clr-dark);
+}
+
+.bg-light {
+    background-color: var(--clr-light);
+}
+
+.bg-white {
+    background-color: var(--clr-white);
+}
+
+.text-dark {
+    color: var(--clr-light);
+}
+
+.text-light {
+    color: var(--clr-light);
+}
+
+.text-white {
+    color: var(--clr-white);
+}
