@@ -225,6 +225,7 @@ p {
 
 .underline-indicators > * {
     padding: var(--underline-gap, 1rem) 0;
+    border: 0;
     border-bottom: .2rem solid hsl(var(--clr-white) / 0);
 }
 
@@ -233,6 +234,17 @@ p {
     border-color: hsl(var(--clr-white) / 0.5);
 }
 
-.underline-indicators > .active {
+.underline-indicators > .active,
+.underline-indicators > [aria-selected="true"] {
+    color: hsl(var(--clr-white) / 1);
     border-color: hsl(var(--clr-white) / 1);
+}
+
+.tab-navigation {
+    --gap: 2rem;
+    --underline-gap: 2rem;
+}
+
+.tab-navigation > button {
+    cursor: pointer;
 }
