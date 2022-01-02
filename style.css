@@ -70,6 +70,10 @@ select {
     gap: var(--gap, 1rem);
 }
 
+/* .flow > * + *{
+    margin-top: 1rem;
+} */
+
 .container {
     padding-inline: 2em;
     max-width: 80rem;
@@ -166,4 +170,38 @@ p {
     margin-right: 0.5em;
     font-weight: 700;
     color: hsl(0 0% 100% / .25);
+}
+
+/* --------------------- */
+/*  Components */
+/* --------------------- */
+
+.circular-btn {
+    position: relative;
+    padding: 0 2em;
+    display: grid;
+    z-index: 1;
+    place-items: center;
+    text-decoration: none;
+    width: 274px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.circular-btn::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: hsl(0 0% 100% / .15);
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 500ms linear, transform  750ms ease-in-out;
+}
+
+.circular-btn:hover::after,
+.circular-btn:focus::after {
+    transform: scale(1.5);
+    opacity: 1;
 }
