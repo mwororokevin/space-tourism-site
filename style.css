@@ -89,7 +89,7 @@ select {
 }
 
 .text-dark {
-    color: var(--clr-light);
+    color: var(--clr-dark);
 }
 
 .text-light {
