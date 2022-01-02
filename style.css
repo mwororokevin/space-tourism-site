@@ -35,6 +35,10 @@
 }
 
 body {
+    font-family: var(--ff-sans-normal);
+    font-size: var(--fs-400);
+    background-color: var(--clr-dark);
+    color: var(--clr-white);
     line-height: 1.5;
     min-height: 100vh;
 }
